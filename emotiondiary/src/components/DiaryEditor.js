@@ -82,7 +82,7 @@ const DiaryEditor = ({ isEdit, originData }) => {
           <div className="input_box">
             <input
               className="input_date"
-              value={date}
+              value={date.slice(0, 10)}
               onChange={(e) => setDate(e.target.value)}
               type="date"
             />
