@@ -1,0 +1,25 @@
+.Editor {
+  display: flex;
+  gap: 10px;
+}
+
+.Editor input {
+  flex: 1;
+  padding: 15px;
+  border: 1px solid #a1c398;
+  border-radius: 5px;
+}
+
+.Editor input:focus {
+  outline: none;
+  border: 2px solid #41b06e;
+}
+
+.Editor button {
+  cursor: pointer;
+  width: 80px;
+  border: none;
+  background-color: #a1c398;
+  color: white;
+  border-radius: 5px;
+}
