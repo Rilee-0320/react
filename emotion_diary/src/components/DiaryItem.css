@@ -42,6 +42,8 @@
 .DiaryItem .info_section {
   flex: 1;
   cursor: pointer;
+  max-height: 80px;
+  overflow-y: hidden;
 }
 
 .DiaryItem .info_section .created_date {
