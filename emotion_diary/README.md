@@ -1,8 +1,28 @@
-# React + Vite
+# 감정 일기장([바로가기↗](https://emotion-diary-roan-two.vercel.app/))
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+<p align="center"><img src="./public/thumbnail.jpeg"></p>
 
-Currently, two official plugins are available:
+## 프로젝트 소개
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+'한입 크기로 잘라먹는 리액트' 강의 실습 기반 프로젝트입니다.  
+리액트와 Vercel을 사용하여 개발, 배포한 사용자의 감정을 기록할 수 있는 일기장 웹사이트입니다.
+
+### 주요 기술
+
+- **언어:** JavaScript, HTML, CSS
+- **프레임워크:** React
+- **라이브러리:** React Router
+- **인프라:** Vite, Vercel
+
+### 개발 사항
+
+- 감정 기록 기능 구현: 사용자의 감정을 기록한 일기 입력 및 수정, 삭제
+- 리액트 라우터를 활용한 페이지 라우팅: 다양한 페이지 전환 기능 구현
+- 웹 스토리지를 활용한 데이터 저장: 로컬 스토리지에 데이터 저장
+
+### 프로젝트를 통해 배운 점
+
+- 리액트의 기본, 심화 개념 학습
+- Vite를 이용한 빠르고 간편한 초기 설정 및 빌드 환경 구성
+- 리액트를 이용한 SPA 개발과 컴포넌트 기반 설계
+- Vercel을 통한 프로젝트 배포
