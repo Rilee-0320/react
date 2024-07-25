@@ -11,7 +11,7 @@
 
 - **언어:** JavaScript, HTML, CSS
 - **프레임워크:** React
-- **라이브러리:** React Router
+- **라이브러리:** React Router, React Hooks
 - **인프라:** Vite, Vercel
 
 ### 개발 사항
