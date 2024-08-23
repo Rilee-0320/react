@@ -1,6 +1,7 @@
 import { useState } from "react";
 import NicknameModal from "./components/NicknameModal";
 import UserList from "./components/UserList";
+import ChatWindow from "./components/ChatWindow";
 
 function App() {
   const [nickname, setNickname] = useState<string | null>(null);
@@ -27,7 +28,7 @@ function App() {
         <UserList onUserClick={handleUserClick} />
         <div>
           {selectedUsers.map((user) => (
-            <div>{user}님과의 채팅</div>
+            <ChatWindow key={user} user={user} />
           ))}
         </div>
       </div>
