@@ -17,6 +17,10 @@ function App() {
     }
   };
 
+  const handleCloseChat = (user: string) => {
+    setSelectedUsers((prevUsers) => prevUsers.filter((u) => u !== user));
+  };
+
   if (!nickname) {
     return <NicknameModal onSetNickname={handleSetNickname} />;
   }
@@ -28,7 +32,7 @@ function App() {
         <UserList onUserClick={handleUserClick} />
         <div>
           {selectedUsers.map((user) => (
-            <ChatWindow key={user} user={user} />
+            <ChatWindow key={user} user={user} onClose={handleCloseChat} />
           ))}
         </div>
       </div>

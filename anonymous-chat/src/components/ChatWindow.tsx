@@ -2,9 +2,10 @@ import { useState } from "react";
 
 interface ChatWindowProps {
   user: string;
+  onClose: (user: string) => void;
 }
 
-const ChatWindow = ({ user }: ChatWindowProps) => {
+const ChatWindow = ({ user, onClose }: ChatWindowProps) => {
   const [message, setMessage] = useState<string[]>([]);
   const [input, setInput] = useState("");
 
@@ -15,9 +16,16 @@ const ChatWindow = ({ user }: ChatWindowProps) => {
     }
   };
 
+  const handleCloseClick = () => {
+    onClose(user);
+  };
+
   return (
     <div>
-      <h2>{user}님과의 채팅</h2>
+      <div>
+        <h2>{user}님과의 채팅</h2>
+        <button onClick={handleCloseClick}>Close</button>
+      </div>
       <div>
         {message.map((msg, idx) => (
           <div key={idx}>{msg}</div>
